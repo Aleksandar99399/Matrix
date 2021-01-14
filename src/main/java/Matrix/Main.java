@@ -4,7 +4,6 @@ import Matrix.oop.Brick;
 import Matrix.oop.Matrix;
 import Matrix.oop.Methods;
 import Matrix.oop.Reader;
-import org.w3c.dom.ls.LSOutput;
 
 import java.io.IOException;
 import java.util.Arrays;
