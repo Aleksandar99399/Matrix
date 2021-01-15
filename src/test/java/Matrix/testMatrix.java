@@ -9,7 +9,7 @@ public class testMatrix {
 
     @Test(expected = IllegalArgumentException.class)
     public void invalidInputForRowsAndCols(){
-        Methods.validateInput(100,100);
+        Methods.validateInput(0,0,2);
     }
 
     @Test

@@ -9,20 +9,26 @@ public class Methods {
 
     /**
      * Method validate:
+     *
      * @param rows from input
      * @param cols from input
-     *
-     * Throw exception if input is with invalid arguments
+     *             <p>
+     *             Throw exception if input is with invalid arguments
      */
-    public static void validateInput(int rows, int cols) {
+    public static void validateInput(int rows, int cols, int length) {
 
-        if (rows % 2 != 0 || rows >= 100 || cols >= 100 || cols % 2 != 0) {
+        if (rows % 2 != 0 || rows >= 100
+                || cols >= 100 || cols % 2 != 0
+                || length != 2
+                || rows==0 || cols==0) {
+
             throw new IllegalArgumentException("-1: Solutions not exist!");
         }
     }
 
     /**
      * Method print the 2D array.
+     *
      * @param matrix contains inside this one.
      */
     public static void printMatrix(Matrix matrix) {
